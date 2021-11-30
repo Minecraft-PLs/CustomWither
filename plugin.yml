@@ -1,0 +1,7 @@
+name: CustomWither
+version: 1.0
+description: Custom Wither by Grzywniak.pl
+main: pl.grzywniak.xcraftrayx.customwither.CustomWither
+author: Dawid (xCraftRayX) Grzywniak
+website: https://grzywniak.pl/
+api-version: 1.13
