@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>CustomWither</groupId>
+  <artifactId>CustomWither</artifactId>
+  <version>2.0</version>
+  <name>CustomWither</name>
+  <description>Custom wither - more stronger!</description>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>15</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <!-- This adds the Spigot Maven repository to the build -->
+    <repository>
+        <id>spigot-repo</id>
+        <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+    
+    <repository>
+    <id>purpur</id>
+    <url>https://repo.purpurmc.org/snapshots</url>
+</repository>
+  </repositories>
+  <dependencies>
+    <!--This adds the Spigot API artifact to the build -->
+	<dependency>
+	    <groupId>org.purpurmc.purpur</groupId>
+	    <artifactId>purpur-api</artifactId>
+	    <version>1.19-R0.1-SNAPSHOT</version>
+	    <scope>provided</scope>
+	</dependency>
+  </dependencies>
+</project>

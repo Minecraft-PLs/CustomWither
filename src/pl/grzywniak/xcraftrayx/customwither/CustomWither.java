@@ -13,6 +13,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.entity.Wither;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import net.kyori.adventure.text.Component;
+
 public class CustomWither extends JavaPlugin
 {
 	public void onEnable()
@@ -93,7 +95,8 @@ public class CustomWither extends JavaPlugin
 	
 	private void replaceNameWithHP(Wither w)
 	{
-		w.setCustomName("Wither: "+ (int)w.getHealth() + " HP");
+		//w.setCustomName("Wither: "+ (int)w.getHealth() + " HP");
+		w.customName(Component.text("Wither: " + (int)w.getHealth() + " HP"));
 	}
 	
 	private void loadWithers()
